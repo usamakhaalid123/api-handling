@@ -9,7 +9,7 @@ function App() {
   const [search, setSearch] = useState("");
 
   useEffect(() => {
-    const controller = new AbortController();
+    const controller = new AbortController(); //race codition handle through this mean lastrequest will be give
     (async () => {
       try {
         setLoading(true);
